@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+</head>
+
+<body>
+    <style>
+        h1{
+            color:black;
+            background-color:cornsilk;
+            text-align: center;
+        }
+        
+    </style>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin: 15px 30px;
+            font-size:17px;
+            padding: 8px;
+        }
+        .container{
+            background-color: #f2f2f2;
+            padding:5px 20px 15px 20px;
+            border:1px solid lightgray;
+            border-radius: 4px; 
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea{
+            width: 100%;
+            padding:12px;
+            border:1px solid #ccc;
+        border-radius:5px;
+        margin: 10px;
+        }
+        fieldset{
+            background-color:white;
+            border:1px solid beige;
+        }
+        input[type="submit"]{
+            background-color: snow;
+            color:black;
+            padding:12px;
+            border:none;
+            border-radius:4px;
+            cursor:pointer;
+            width:100%;
+
+        }
+        input[type="submit"]:hover{
+            background-color:beige;
+        }
+    </style>
+    <h1>payment form</h1>
+    <h2>contact information</h2>
+    <h4>Name *</h4>
+    <input type="first name"placeholder=" first name"required>
+    <input type="middle name"placeholder="middle name">
+    <input type="last name"placeholder="last name"required><br>
+    <fieldset>
+        
+   <legend>gender *</legend>
+    <input type="radio"name="gender"id="female">female<input type="radio"name="gender"id="female">male
+    
+
+    
+    </fieldset>
+    <p>
+      address:<textarea name="address"id="address"cols="30"rows="10"></textarea>
+    </p>
+    <fieldset>
+    <legend>email *</legend>
+    <input type="text"placeholder="email"id="email"required>
+    </fieldset>
+    <fieldset>
+    <h4>pin code *</h4>
+    <input type="number"placeholder="enter pin code"id="pincode">
+
+    </fieldset>
+    <hr>
+    <h2>payment information *</h2>
+    <p>card type:
+        <select name="card_type" id="card_type">
+            <option value="">--select a card type--</option>
+            <option value="">--visa--</option>
+            <option value="">--rupay--</option>
+            <option value="">--g-pay--</option>
+        </select>>
+        
+    </p>
+    <p>card number</p><input type="number"placeholder="card_number"id="card_number">
+    <p>expiry date</p><input type="date"placeholder="expiry date"id="expiry_date">
+    <p>cvv</p><input type="password"placeholder="cvv"id=cvv>
+    <input type="submit"value="pay now">
+    
+</body>
+</html>
